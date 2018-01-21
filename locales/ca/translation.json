@@ -1,0 +1,49 @@
+{
+	"about-me": {
+		"section-title": "Sobre mi",
+		"1": "Hola! El meu nom és David, tinc ",
+		"2": " anys i soc enginyer informàtic de la FIB (Facultat d'Informàtica de Barcelona).",
+		"3": "Actualment soc programador web PHP, encara que també tinc curiositat per ampliar coneixements en altres camps com les bases de dades (BigData, Data Mining), IoT-SmartCities o aplicacions mòbils.",
+		"4": "En l'ADN d'un informàtic sempre ha d'estar la formació continua, per aquesta raó sempre estic obert a descobrir altre àrees, llenguatges de programació, metodologies o noves tecnologies.",
+		"5": "Soc alegre, rialler, tranquil i una mica tímid. En el meu temps de lleure acostumo a veure els meus programes, series i pel·lícules favorites, jugar a videojocs, i compartir moments divertits amb la companyia de la meva família i amics.",
+		"6": "Si vols saber més sobre mi, t'invito a visitar el meu perfil a LinkedIn, i per més detalls, contacta amb mi per correu electrònic."
+	},
+
+	"skills": {
+		"section-title": "Coneixements",
+		"php": "Coneixements avançats en el desenvolupament del backend d'aplicacions web. Experiència sòlida amb l'ús del framework Codeigniter.",
+		"git": "Conceptes fonamentals i experiència amb gestió de repositoris.",
+		"mysql": "Coneixements avançats en la creació, disseny i optimització de bases de dades i construcció de queries complexes.",
+		"html": "Coneixement mitjà en la creació de pàgines web i formularis.",
+		"js": "Creació d'scripts per pàgines o aplicacions web. Familiaritzat amb JS natiu i jQuery.",
+		"css": "Conceptes bàsics de disseny i transformació de contingut de pàgines i aplicacions web. Experiència amb Bootstrap.",
+		"android": "Desenvolupament d'aplicacions mòbils natives de mitjana complexitat mitjançant l'SDK (Gestió de notificacions, bases de dades SQLite, creació de API REST)..",
+		"vagrant": "Creació de màquines virtuals.",
+		"other": "Altres coneixements"
+	},
+
+	"experience": {
+		"section-title": "Experiència",
+		"eoniantec-time": "Març 2015 - Actualment",
+		"eoniantec": "Desenvolupament intern de noves eines i funcionalitats, manteniment del software (correcció d'errors, optimització, neteja i refactorització), utilització d'APIs externes de marketing (Facebook Ads, Google AdWords, etc.) per tasques de gestió automatitzada de ads i generació de reports diaris."
+	},
+
+	"formation": {
+		"section-title": "Formació",
+		"degree": "Grau en Enginyeria Informàtica - Universitat Politècnica de Catalunya",
+		"time": "Setembre 2009 - Gener 2015",
+		"studies": "Estudis de Grau en Enginyeria Informàtica (Sistemes d'Informació) a la Facultat d'Informàtica de Barcelona (FIB) de la Universitat Politècnica de Catalunya (UPC)",
+		"degree-final-project": "Treball Final de Grau: ",
+		"degree-final-project-title": "\"Sistema de control de medicació\" (Castellà)"
+	},
+
+	"external-link-title": {
+		"linkedin": "Mira el meu perfil a LinkedIn",
+		"github": "Els meus projectes a GitHub",
+		"email": "Contacta amb mi a través de email"
+	},
+
+	"footer": {
+		"column-title-sections": "Seccions"
+	}
+}

@@ -3,6 +3,11 @@
     font-size: initial !important;
 }
 
+.dropdown-content > li > a {
+    color: #2979ff; /*blue accent-4*/
+    font-weight: 500;
+}
+
 .card-panel .card-panel-header {
     border-bottom: 2px solid #0577ad;
 }
@@ -55,6 +60,16 @@
 
 
 /*Sections custom styles*/
+#langDropdown i {
+    margin-right: 7px;
+}
+#langSelected {
+    text-transform: uppercase;
+}
+#langOptions.dropdown-content li {
+    border-bottom: 1px solid #9e9e9e; /*grey*/
+}
+
 #about-me .avatar-container {
     margin-top: -125px;
     margin-bottom: -60px;
@@ -74,7 +89,7 @@
 #about-me .contact-link {
     background-color: #9e9e9e; /*grey*/
 }
-#about-me .linkedin-btn:hover {
+#about-me .lin-btn:hover {
     background-color: #0077b5;
 }
 #about-me .github-btn:hover {

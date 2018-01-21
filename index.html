@@ -8,9 +8,9 @@
         <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5'>
         <meta name='theme-color' content='#ffffff'>
         <link href='http://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-        <link type='text/css' rel='stylesheet' href='css/materialize.min.css' media='screen,projection'/>
-        <link type='text/css' rel='stylesheet' href='css/styles.css' />
-        <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css'>
+        <link type='text/css' rel='stylesheet' href='/css/materialize.min.css' media='screen,projection'/>
+        <link type='text/css' rel='stylesheet' href='/css/styles.css' />
+        <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
 
         <meta charset='UTF-8'>
@@ -24,6 +24,19 @@
             <nav class='grey lighten-4'>
                 <div class='nav-wrapper grey darken-4'>
                     <a href='#' class='brand-logo center grey-text text-lighten-2'>David Castro - <small>Backend developer</small></a>
+                    <a href='#' data-activates='mobile-demo' class='button-collapse'><i class='material-icons'>menu</i></a>
+                    <ul class='right hide-on-med-and-down'>
+                        <li>
+                            <a id='langDropdown' class='dropdown-button' href='javascript:void(0);' data-activates='langOptions'><i class='material-icons left'>language</i><span id='langSelected'>ES</span></a>
+                            <ul id='langOptions' class='dropdown-content'>
+                                <li><a href='javascript:void(0);' data-langcode='es'>Español</a></li>
+                                <li><a href='javascript:void(0);' data-langcode='ca'>Català</a></li>
+                                <li><a href='javascript:void(0);' data-langcode='en'>English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class='side-nav' id='mobile-demo'>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -51,25 +64,29 @@
 
                             <div class='row'>
                                 <div class='col l8 offset-l2 m10 offset-m1 s12 grey-text text-darken-1 intro-txt'>
-                                    <p>¡Hola! Me llamo David, tengo <span id='myAge' data-birthdate='1991-11-11'></span> años y soy ingeniero informático de la FIB (Facultat d'Informàtica de Barcelona).</p>
+                                    <p>
+                                        <span data-i18n='about-me.1'></span>
+                                        <span id='myAge' data-birthdate='1991-11-11'></span>
+                                        <span data-i18n='about-me.2'></span>
+                                    </p>
 
-                                    <p>Actualmente soy programador web PHP, aunque también tengo curiosidad por ampliar conocimientos en otros campos como las bases de datos (BigData, Data Mining), IoT-SmartCities o aplicaciones móviles.</p>
+                                    <p data-i18n='about-me.3'></p>
 
-                                    <p>En el ADN de un informático siempre debe estar la formación continua, por eso siempre estoy abierto a descubrir otras áreas, lenguajes de programación, metodologías o nuevas tecnologías.</p>
+                                    <p data-i18n='about-me.4'></p>
 
-                                    <p>Soy alegre, risueño, tranquilo y un poco tímido. En mi tiempo de ocio suelo ver mis programas, series y películas favoritas, jugar a videojuegos, y compartir momentos divertidos en compañía de mi família y amigos.</p>
+                                    <p data-i18n='about-me.5'></p>
 
-                                    <p>Si quieres saber más sobre mi, te invito a visitar a mi perfil en LinkedIn, y para más detalles, contacta conmigo por correo electrónico.</p>
+                                    <p data-i18n='about-me.6'></p>
                                 </div>
                             </div>
 
-                            <a href='https://www.linkedin.com/in/david-castro-30a15b96' class='contact-link circle linkedin-btn' target='_blank' title='Mira mi perfil en LinkedIn'>
+                            <a href='https://www.linkedin.com/in/david-castro-30a15b96' class='contact-link circle lin-btn' target='_blank' data-i18n='[title]external-link-title.linkedin' title=''>
                                 <i class='zmdi zmdi-linkedin-box'></i>
                             </a>
-                            <a href='https://github.com/davidcv91' class='contact-link circle github-btn' target='_blank' title='Mis proyectos en GitHub'>
+                            <a href='https://github.com/davidcv91' class='contact-link circle github-btn' target='_blank' data-i18n='[title]external-link-title.github' title=''>
                                 <i class='zmdi zmdi-github-alt'></i>
                             </a>
-                            <a href='#' class='contact-link circle email-btn email-link' target='_blank' title='Contacta conmigo a través de email'>
+                            <a href='#' class='contact-link circle email-btn email-link' target='_blank' data-i18n='[title]external-link-title.email' title=''>
                                 <i class='zmdi zmdi-email'></i>
                             </a>
                         </div>
@@ -84,102 +101,102 @@
                 <div class='card-panel z-depth-3 hoverable'>
                     <div class='card-panel-header'>
                         <i class='small material-icons grey-text text-darken-2 align-icon-text'>code</i>
-                        <span class='card-panel-title'>Conocimientos</span>
+                        <span class='card-panel-title' data-i18n='skills.section-title'></span>
                     </div>
 
                     <div class='card-panel-content'>
                         <ul class='collection'>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-php-plain colored'></i></i>
-                                <span class='title'>PHP
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_half</i>
-                                </span>
-                                <p>
-                                    Conocimientos avanzados en el desarrollo del backend de aplicaciones web. Experiencia sólida con el uso del framework Codeigniter.
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-git-plain colored'></i></i>
-                                <span class='title'>GIT
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_border</i>
-                                </span>
-                                <p>
-                                    Gestión básica de repositorios.
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-mysql-plain colored'></i></i>
-                                <span class='title'>MySQL
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_border</i>
-                                </span>
-                                <p>
-                                    Conocimientos avanzados en creación, diseño y optimización de base de datos y construcción de queries complejas.
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-html5-plain-wordmark colored'></i></i>
-                                <span class='title'>HTML
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_border</i>
-                                </span>
-                                <p>
-                                    Conocimiento medio en creación de páginas web y formularios.
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-javascript-plain colored'></i></i>
-                                <span class='title'>JavaScript
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_border</i>
-                                </span>
-                                <p>
-                                    Creación de scripts para páginas o aplicaciones web. Familiarizado con JS nativo y jQuery.
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-css3-plain-wordmark colored'></i></i>
-                                <span class='title'>CSS
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_half</i>
-                                    <i class='material-icons tiny star-icon'>star_border</i>
-                                </span>
-                                <p>
-                                    Conocimiento básico en diseño y transformación de contenido de páginas y aplicaciones web. Experiencia con Bootstrap.
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-android-plain colored'></i></i>
-                                <span class='title'>Android
-                                    <br>
-                                    <i class='material-icons tiny star-icon'>star</i>
-                                    <i class='material-icons tiny star-icon'>star_half</i>
-                                    <i class='material-icons tiny star-icon'>star_border</i>
-                                </span>
-                                <p>
-                                    Desarrollo de aplicaciones móviles nativas de complejidad media mediante el SDK. (Gestión de notificaciones, base de datos SQLite, desarrollo de REST API)
-                                </p>
-                            </li>
-                            <li class='collection-item avatar'>
-                                <i class='circle transparent'><i class='devicon devicon-devicon-plain colored'></i></i>
-                                <span class='title'>Otros conocimientos</span>
-                                <p>
-                                    C++, C, Java, Vagrant
-                                </p>
-                            </li>
+                            <div class='row'>
+                                <div class='col m6 s12'>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-php-plain colored'></i></i>
+                                        <span class='title'>PHP
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
+                                        </span>
+                                        <p data-i18n='skills.php'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-git-plain colored'></i></i>
+                                        <span class='title'>GIT
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.git'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-mysql-plain colored'></i></i>
+                                        <span class='title'>MySQL
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.mysql'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-html5-plain-wordmark colored'></i></i>
+                                        <span class='title'>HTML
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.html'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-javascript-plain colored'></i></i>
+                                        <span class='title'>JavaScript
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.js'></p>
+                                    </li>
+                                </div>
+                                <div class='col m6 s12'>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-css3-plain-wordmark colored'></i></i>
+                                        <span class='title'>CSS
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.css'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-android-plain colored'></i></i>
+                                        <span class='title'>Android
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.android'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-vagrant-plain colored'></i></i>
+                                        <span class='title'>Vagrant
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.vagrant'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-devicon-plain colored'></i></i>
+                                        <span class='title' data-i18n='skills.other'></span>
+                                        <p>C++, C, Java</p>
+                                    </li>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -193,7 +210,7 @@
                 <div class='card-panel z-depth-3 hoverable'>
                     <div class='card-panel-header'>
                         <i class='small material-icons grey-text text-darken-2 align-icon-text'>business</i>
-                        <span class='card-panel-title'>Experiencia</span>
+                        <span class='card-panel-title' data-i18n='experience.section-title'></span>
                     </div>
 
                     <div class='card-panel-content'>
@@ -213,13 +230,14 @@
                                         </p>
                                         <p>
                                             <i class='tiny material-icons grey-text text-darken-2 align-icon-text'>date_range</i>
-                                            <span>&nbsp;Marzo 2015 - Actualmente</span>
+                                            <span data-i18n='experience.eoniantec-time'></span>
                                         </p>
-                                        <p>Desarrollo interno de nuevas herramientas y funcionalidades, mantenimiento del software (corrección de errores, optimización, limpieza y refactorización), uso de APIs externas de marketing (Facebook Ads, Google AdWords, etc.) para tareas de gestión automatizada de ads y generación de reports diarios.</p>
+                                        <p data-i18n='experience.eoniantec'></p>
                                         <div class='chip highlighted-skill white-text'>PHP</div>
                                         <div class='chip highlighted-skill white-text'>CodeIgniter</div>
                                         <div class='chip highlighted-skill white-text'>Git</div>
                                         <div class='chip highlighted-skill white-text'>MySQL</div>
+                                        <div class='chip skill'>Vagrant</div>
                                         <div class='chip skill'>jQuery</div>
                                         <div class='chip skill'>JavaScript</div>
                                         <div class='chip skill'>HTML</div>
@@ -239,7 +257,7 @@
                 <div class='card-panel z-depth-3 hoverable'>
                     <div class='card-panel-header'>
                         <i class='small material-icons grey-text text-darken-2 align-icon-text'>school</i>
-                        <span class='card-panel-title'>Formación</span>
+                        <span class='card-panel-title' data-i18n='formation.section-title'></span>
                     </div>
 
                     <div class='card-panel-content'>
@@ -251,13 +269,16 @@
                                     </td>
                                     <td>
                                         <p>
-                                            <strong>Grado en Ingeniería Informática - Universitat Politècnica de Catalunya</strong>
+                                            <strong data-i18n='formation.degree'></strong>
                                         </p>
                                         <p>
                                             <i class='tiny material-icons grey-text text-darken-2 align-icon-text'>date_range</i>
-                                            <span>&nbsp;Septiembre 2009 - Enero 2015</span>
-                                            <p>Estudios de Grado en Ingeniería Informática (Sistemas de Información) en la Facultat d'Informàtica de Barcelona (FIB) de la Universitat Politècnica de Catalunya (UPC)</p>
-                                            <p>Trabajo Final de Grado: <a href='http://hdl.handle.net/2099.1/25125' target='_blank' rel='nofollow'>"Sistema de control de medicación"</a></p>
+                                            <span data-i18n='formation.time'></span>
+                                            <p data-i18n='formation.studies'></p>
+                                            <p>
+                                                <span data-i18n='formation.degree-final-project'></span>
+                                                <a href='http://hdl.handle.net/2099.1/25125' target='_blank' rel='nofollow' data-i18n='formation.degree-final-project-title'></a>
+                                            </p>
                                         </p>
                                     </td>
                                 </tr>
@@ -281,30 +302,43 @@
                 <div class='row center-on-small-only'>
                     <div class='col m6 s12'>
                         <h5 class='white-text'>David Castro</h5>
-                        <a href='https://www.linkedin.com/in/david-castro-30a15b96' class='contact-link circle' target='_blank' title='Mira mi perfil en LinkedIn'>
+                        <a href='https://www.linkedin.com/in/david-castro-30a15b96' class='contact-link circle' target='_blank' data-i18n='[title]external-link-title.linkedin' title=''>
                             <i class='zmdi zmdi-linkedin-box'></i>
                         </a>
-                        <a href='https://github.com/davidcv91' class='contact-link circle' target='_blank' title='Mis proyectos en GitHub'>
+                        <a href='https://github.com/davidcv91' class='contact-link circle' target='_blank' data-i18n='[title]external-link-title.github' title=''>
                             <i class='zmdi zmdi-github-alt'></i>
                         </a>
-                        <a href='#' class='contact-link circle email-link' target='_blank' title='Contacta conmigo a través de email'>
+                        <a href='#' class='contact-link circle email-link' target='_blank' data-i18n='[title]external-link-title.email' title=''>
                             <i class='zmdi zmdi-email'></i>
                         </a>
                     </div>
                     <div class='col m4 offset-m2 s12'>
-                        <h5 class='white-text'>Secciones</h5>
+                        <h5 class='white-text' data-i18n='footer.column-title-sections'></h5>
                         <ul>
-                            <li><a class='section-link' href='#'>Sobre mi</a></li>
-                            <li><a class='section-link' href='#skills'>Conocimientos</a></li>
-                            <li><a class='section-link' href='#experience'>Experiencia</a></li>
-                            <li><a class='section-link' href='#formation'>Formación</a></li>
+                            <li>
+                                <a class='section-link' href='#' data-i18n='about-me.section-title'></a>
+                            </li>
+                            <li>
+                                <a class='section-link' href='#skills' data-i18n='skills.section-title'></a>
+                            </li>
+                            <li>
+                                <a class='section-link' href='#experience' data-i18n='experience.section-title'></a>
+                            </li>
+                            <li>
+                                <a class='section-link' href='#formation' data-i18n='formation.section-title'></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class='footer-copyright grey darken-4'>
                 <div class='container'>
-                    <p class='right grey-text text-lighten-4'>made with <span class='red-text'>❤</span> from <a href='https://es.wikipedia.org/wiki/Hospitalet_de_Llobregat' class='hidden-link' target='_blank' rel='nofollow'><strong>L'H</strong></a></p>
+                    <p class='right grey-text text-lighten-4'>
+                        made with <span class='red-text'>❤</span> from
+                        <a href='https://es.wikipedia.org/wiki/Hospitalet_de_Llobregat' class='hidden-link' target='_blank' rel='nofollow'>
+                            <strong>L'H</strong>
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
@@ -312,69 +346,70 @@
 
         <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
         <script type='text/javascript' src='js/materialize.min.js'></script>
+        <script type='text/javascript' src='/js/i18next.min.js'></script>
+        <script type='text/javascript' src='/js/jquery-i18next.min.js'></script>
+        <script type='text/javascript' src='/js/i18nextXHRBackend.min.js'></script>
+        <script type='text/javascript' src='/js/i18nextBrowserLanguageDetector.min.js'></script>
+        <script type='text/javascript' src='/js/utils.js' ></script>
         <script type='text/javascript'>
-             $(document).ready(function(){
-                $('.parallax').parallax();
+            i18next
+                .use(i18nextXHRBackend)
+                .use(i18nextBrowserLanguageDetector)
+                .init(
+                {
+                    debug: false,
+                    fallbackLng: 'es',
+                    whitelist: ['es', 'ca', 'en'],
+                    nonExplicitWhitelist: true,
+                    load: 'languageOnly',
+                    backend: {
+                      loadPath: '/locales/{{lng}}/{{ns}}.json'
+                    },
+                    detection: {
+                        order: ['querystring', 'cookie', 'navigator'],
+                        caches: ['cookie'],
+                        excludeCacheFor: ['cimode'],
+                        cookieMinutes: 60
+                    }
+                },
+                function(err, t) {
+                    jqueryI18next.init(i18next, $);                    
 
-                var age = calculateAge($('#myAge').attr('data-birthdate'));
-                $('#myAge').html(age);
+                    $('body').localize();
+                }
+            );
+
+
+            i18next.on('languageChanged', function(lng) {
+                if (lng.length > 2) {
+                    lng = lng.substring(0, 2);
+                }
+                
+                $('#langSelected').html(lng);
+            })
+
+
+             $(document).ready(function(){
+
+                $('.parallax').parallax();
+                $('.button-collapse').sideNav();
+
+                $('#myAge').html(calculateAge($('#myAge').attr('data-birthdate')));
 
                 //To prevent spam
                 $('.email-link').attr('href', 'mailto:'+'davidcv191'+'@'+'gmail.com');
 
-                //Smooth Scroll to sections
-                $('a[href^="#"]').on('click', function(event) {
-                    var target = $($(this).attr('href'));
-                    var scrollValue = 0;
-                    var extraOffset = 70;
-
-                    event.preventDefault();
-                    if (target.length) {
-                        scrollValue = target.offset().top-extraOffset
-                    }
-
-                    $('html, body').stop().animate({
-                        scrollTop: scrollValue
-                    }, 1000);
+                $('#langOptions a').click(function() {
+                    var langCode = $(this).attr('data-langcode');
+                    $('#langSelected').html(langCode);
+                    i18next.changeLanguage(langCode, (err, t) => {
+                        if (!err) {
+                            window.history.replaceState(null, null, "/?lng="+langCode); //Add query string param
+                            $('body').localize();
+                        }
+                    });
                 });
             });
-
-            function calculateAge(date)
-            {
-                date = date.split('-');
-                var birthYear = date[0];
-                var birthMonth = date[1];
-                var birthDay = date[2];
-
-                var todayDate = new Date();
-                var currentYear = todayDate.getFullYear();
-                var currentMonth = todayDate.getMonth()+1;
-                var currentDay = todayDate.getDate();
-
-                var age = currentYear - birthYear;
-
-                if (currentMonth < birthMonth) {
-                    --age;
-                }
-                else if (currentMonth == birthMonth) {
-                    if (currentDay < birthDay) {
-                        --age;
-                    }
-                }
-                return age;
-            }
-
-
-        </script>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-106096111-1', 'auto');
-        ga('send', 'pageview');
-
         </script>
     </body>
 </html>
