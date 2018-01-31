@@ -18,7 +18,7 @@
 		"js": "Creación de scripts para páginas o aplicaciones web. Familiarizado con JS nativo y jQuery.",
 		"css": "Conceptos básicos para el diseño y transformación de contenido de páginas y aplicaciones web. Experiencia con Bootstrap.",
 		"android": "Desarrollo de aplicaciones móviles nativas de complejidad media mediante el SDK (Gestión de notificaciones, base de datos SQLite, creación de API REST).",
-		"vagrant": "Creación de máquinas virtuales.",
+		"vagrant": "Creación de scripts para configuración de entornos de desarrollo virtuales.",
 		"other": "Otros conocimientos"
 	},
 

@@ -18,7 +18,7 @@
 		"js": "Creació d'scripts per pàgines o aplicacions web. Familiaritzat amb JS natiu i jQuery.",
 		"css": "Conceptes bàsics de disseny i transformació de contingut de pàgines i aplicacions web. Experiència amb Bootstrap.",
 		"android": "Desenvolupament d'aplicacions mòbils natives de mitjana complexitat mitjançant l'SDK (Gestió de notificacions, bases de dades SQLite, creació de API REST)..",
-		"vagrant": "Creació de màquines virtuals.",
+		"vagrant": "Creació d'scripts per la configuració d'entorns de desenvolupament virtuals.",
 		"other": "Altres coneixements"
 	},
 
