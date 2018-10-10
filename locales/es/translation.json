@@ -12,6 +12,7 @@
 	"skills": {
 		"section-title": "Conocimientos",
 		"php": "Conocimientos avanzados en el desarrollo del backend de aplicaciones web. Experiencia sólida con el uso del framework Codeigniter.",
+		"symfony": "Actualmente aprendiendo conceptos básicos del framework, Doctrine y Twig.",
 		"git": "Conceptos fundamentales y experiencia en gestión de repositorios.",
 		"mysql": "Conocimientos avanzados en creación, diseño y optimización de base de datos y construcción de queries complejas.",
 		"html": "Conocimiento medio en creación de páginas web y formularios.",
@@ -20,6 +21,14 @@
 		"android": "Desarrollo de aplicaciones móviles nativas de complejidad media mediante el SDK (Gestión de notificaciones, base de datos SQLite, creación de API REST).",
 		"vagrant": "Creación de scripts para configuración de entornos de desarrollo virtuales.",
 		"other": "Otros conocimientos"
+	},
+
+	"languages": {
+		"section-title": "Idiomas",
+		"spanish": "Español",
+		"catalan": "Catalán",
+		"english": "Inglés (Upper Intermediate)",
+		"english-details": "Comprensión: Medio — Hablado: Medio — Escrito: Alto"
 	},
 
 	"experience": {

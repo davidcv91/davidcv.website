@@ -12,6 +12,7 @@
         <link type='text/css' rel='stylesheet' href='/css/styles.css' />
         <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css'>
 
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
@@ -116,6 +117,16 @@
                                         <p data-i18n='skills.php'></p>
                                     </li>
                                     <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-symfony-original colored'></i></i>
+                                        <span class='title'>Symfony
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.symfony'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-git-plain colored'></i></i>
                                         <span class='title'>GIT
                                             <br>
@@ -145,6 +156,8 @@
                                         </span>
                                         <p data-i18n='skills.html'></p>
                                     </li>
+                                </div>
+                                <div class='col m6 s12'>
                                     <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-javascript-plain colored'></i></i>
                                         <span class='title'>JavaScript
@@ -155,8 +168,6 @@
                                         </span>
                                         <p data-i18n='skills.js'></p>
                                     </li>
-                                </div>
-                                <div class='col m6 s12'>
                                     <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-css3-plain-wordmark colored'></i></i>
                                         <span class='title'>CSS
@@ -168,16 +179,6 @@
                                         <p data-i18n='skills.css'></p>
                                     </li>
                                     <li class='collection-item avatar'>
-                                        <i class='circle transparent'><i class='devicon devicon-android-plain colored'></i></i>
-                                        <span class='title'>Android
-                                            <br>
-                                            <i class='material-icons tiny star-icon'>star</i>
-                                            <i class='material-icons tiny star-icon'>star_half</i>
-                                            <i class='material-icons tiny star-icon'>star_border</i>
-                                        </span>
-                                        <p data-i18n='skills.android'></p>
-                                    </li>
-                                    <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-vagrant-plain colored'></i></i>
                                         <span class='title'>Vagrant
                                             <br>
@@ -186,6 +187,16 @@
                                             <i class='material-icons tiny star-icon'>star_border</i>
                                         </span>
                                         <p data-i18n='skills.vagrant'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-android-plain colored'></i></i>
+                                        <span class='title'>Android
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
+                                            <i class='material-icons tiny star-icon'>star_border</i>
+                                        </span>
+                                        <p data-i18n='skills.android'></p>
                                     </li>
                                     <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-devicon-plain colored'></i></i>
@@ -200,6 +211,35 @@
             </div>
         </div>
 
+        <!-- Languages block -->
+        <div id='languages' class='row'>
+            <div class='col s12'>
+                <div class='card-panel z-depth-3 hoverable'>
+                    <div class='card-panel-header'>
+                        <i class='small material-icons grey-text text-darken-2 align-icon-text'>language</i>
+                        <span class='card-panel-title' data-i18n='languages.section-title'></span>
+                    </div>
+
+                    <div class='card-panel-content'>
+                        <ul class='collection'>
+                            <li class='collection-item'>
+                                <span class="flag-icon flag-icon-es"></span>&nbsp;
+                                <span data-i18n='languages.spanish'></span>
+                            </li>
+                            <li class='collection-item'>
+                                <span class="flag-icon flag-icon-es-ct"></span>&nbsp;
+                                <span data-i18n='languages.catalan'></span>
+                            </li>
+                            <li class='collection-item'>
+                                <span class="flag-icon flag-icon-gb"></span>&nbsp;
+                                <span data-i18n='languages.english'></span><br/>
+                                <span class='english-details' data-i18n='languages.english-details'></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Experience block -->
         <div id='experience' class='row'>
@@ -223,7 +263,7 @@
                                     </td>
                                     <td>
                                         <p>
-                                            <strong>Lead Developer - <a href='https://eoniantec.com' class='hidden-link' target='_blank'>EonianTec</a></strong>
+                                            <strong>PHP Backend Developer - <a href='https://eoniantec.com' class='hidden-link' target='_blank'>EonianTec</a></strong>
                                         </p>
                                         <p>
                                             <i class='tiny material-icons grey-text text-darken-2 align-icon-text'>date_range</i>
@@ -317,6 +357,9 @@
                             </li>
                             <li>
                                 <a class='section-link' href='#skills' data-i18n='skills.section-title'></a>
+                            </li>
+                            <li>
+                                <a class='section-link' href='#languages' data-i18n='languages.section-title'></a>
                             </li>
                             <li>
                                 <a class='section-link' href='#experience' data-i18n='experience.section-title'></a>

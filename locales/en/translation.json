@@ -12,6 +12,7 @@
 	"skills": {
 		"section-title": "Skills",
 		"php": "Advanced skills on backend development of web apps. Solid experience with CodeIgniter framework.",
+		"symfony": "Currently learning initial concepts of the framework, Doctrine and Twig.",
 		"git": "Essential skills and experience managing repositories.",
 		"mysql": "Advanced concepts on databases creation, design and optimization and building complex queries.",
 		"html": "Medium level skills on web and forms building.",
@@ -20,6 +21,14 @@
 		"android": "Development of mobile applications of medium complexity through SDK. (Notifications management, SQlite databases and creation of REST API).",
 		"vagrant": "Scripts building for setting up virtual development environments.",
 		"other": "Other skills"
+	},
+
+	"languages": {
+		"section-title": "Languages",
+		"spanish": "Spanish",
+		"catalan": "Catalan",
+		"english": "English (Upper Intermediate)",
+		"english-details": "Understanding: Intermediate — Speaking: Intermediate — Writing: High"
 	},
 
 	"experience": {

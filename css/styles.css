@@ -113,6 +113,12 @@
 }
 
 
+#languages .english-details {
+    margin-left: 27px;
+    font-size: 13px;
+}
+
+
 #experience .company-logo-col {
     padding: 0px 25px;
 }
