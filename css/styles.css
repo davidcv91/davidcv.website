@@ -120,7 +120,7 @@
 
 
 #experience .company-logo-col {
-    padding: 0px 25px;
+    padding: 0 25px;
 }
 #experience .company-logo {
     width: 50px;
@@ -129,6 +129,12 @@
 }
 #experience .company-logo  img{
     margin-top: 25%;
+}
+#experience .company-name {
+    color: #0577ad;
+}
+#experience .card-panel .card-panel-content tr:not(:last-child) {
+    border-bottom: 1px solid #e2e2e2e2;
 }
 #experience .highlighted-skill {
     background-color: #2979ff !important; /*blue accent-4*/
@@ -163,7 +169,7 @@
     }
 
     .card-panel .card-panel-content {
-        padding: 20px 0px;
+        padding: 20px 0;
     }
 }
 
