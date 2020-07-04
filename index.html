@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
     <head>
         <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png'>
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png'>
@@ -42,7 +42,7 @@
         <!-- Header image -->
         <div class='parallax-container small'>
             <div class='parallax'>
-                <img src='images/background.png'/>
+                <img src='images/background.png' alt=""/>
             </div>
         </div>
 
@@ -50,7 +50,7 @@
         <div id='about-me'>
             <div class='row'>
                 <div class='avatar-container center'>
-                    <img src='images/avatar.png' class='avatar-image'/>
+                    <img src='images/avatar.jpg' class='avatar-image' alt=""/>
                 </div>
             </div>
             <div class='row'>
@@ -120,11 +120,21 @@
                                         <i class='circle transparent'><i class='devicon devicon-symfony-original colored'></i></i>
                                         <span class='title'>Symfony
                                             <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
                                             <i class='material-icons tiny star-icon'>star_half</i>
-                                            <i class='material-icons tiny star-icon'>star_border</i>
                                             <i class='material-icons tiny star-icon'>star_border</i>
                                         </span>
                                         <p data-i18n='skills.symfony'></p>
+                                    </li>
+                                    <li class='collection-item avatar'>
+                                        <i class='circle transparent'><i class='devicon devicon-mysql-plain colored'></i></i>
+                                        <span class='title'>MySQL
+                                            <br>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
+                                        </span>
+                                        <p data-i18n='skills.mysql'></p>
                                     </li>
                                     <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-git-plain colored'></i></i>
@@ -137,15 +147,17 @@
                                         <p data-i18n='skills.git'></p>
                                     </li>
                                     <li class='collection-item avatar'>
-                                        <i class='circle transparent'><i class='devicon devicon-mysql-plain colored'></i></i>
-                                        <span class='title'>MySQL
+                                        <i class='circle transparent'><i class='devicon devicon-docker-plain colored'></i></i>
+                                        <span class='title'>Docker
                                             <br>
                                             <i class='material-icons tiny star-icon'>star</i>
-                                            <i class='material-icons tiny star-icon'>star</i>
+                                            <i class='material-icons tiny star-icon'>star_half</i>
                                             <i class='material-icons tiny star-icon'>star_border</i>
                                         </span>
-                                        <p data-i18n='skills.mysql'></p>
+                                        <p data-i18n='skills.docker'></p>
                                     </li>
+                                </div>
+                                <div class='col m6 s12'>
                                     <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-html5-plain-wordmark colored'></i></i>
                                         <span class='title'>HTML
@@ -156,8 +168,6 @@
                                         </span>
                                         <p data-i18n='skills.html'></p>
                                     </li>
-                                </div>
-                                <div class='col m6 s12'>
                                     <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-javascript-plain colored'></i></i>
                                         <span class='title'>JavaScript
@@ -179,29 +189,9 @@
                                         <p data-i18n='skills.css'></p>
                                     </li>
                                     <li class='collection-item avatar'>
-                                        <i class='circle transparent'><i class='devicon devicon-vagrant-plain colored'></i></i>
-                                        <span class='title'>Vagrant
-                                            <br>
-                                            <i class='material-icons tiny star-icon'>star</i>
-                                            <i class='material-icons tiny star-icon'>star</i>
-                                            <i class='material-icons tiny star-icon'>star_border</i>
-                                        </span>
-                                        <p data-i18n='skills.vagrant'></p>
-                                    </li>
-                                    <li class='collection-item avatar'>
-                                        <i class='circle transparent'><i class='devicon devicon-android-plain colored'></i></i>
-                                        <span class='title'>Android
-                                            <br>
-                                            <i class='material-icons tiny star-icon'>star</i>
-                                            <i class='material-icons tiny star-icon'>star_half</i>
-                                            <i class='material-icons tiny star-icon'>star_border</i>
-                                        </span>
-                                        <p data-i18n='skills.android'></p>
-                                    </li>
-                                    <li class='collection-item avatar'>
                                         <i class='circle transparent'><i class='devicon devicon-devicon-plain colored'></i></i>
                                         <span class='title' data-i18n='skills.other'></span>
-                                        <p>C++, C, Java</p>
+                                        <p>C++, C, Java (Android), Vagrant</p>
                                     </li>
                                 </div>
                             </div>
@@ -255,9 +245,40 @@
                             <tbody>
                                 <tr>
                                     <td class='center company-logo-col'>
+                                        <a href='https://shopery.com' target='_blank'>
+                                            <div class='company-logo circle z-depth-1'>
+                                                <img src='images/logo_shopery.png' alt=""/>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <strong>PHP Backend Developer - <a href='https://shopery.com' class='hidden-link' target='_blank'>Shopery</a></strong>
+                                        </p>
+                                        <p>
+                                            <i class='tiny material-icons grey-text text-darken-2 align-icon-text'>business_center</i>
+                                            <span data-i18n='experience.shopery-time'></span>
+                                            <i class='tiny material-icons grey-text text-darken-2 align-icon-text'>date_range</i>
+                                            <span data-i18n='experience.shopery-time'></span>
+                                        </p>
+                                        <p data-i18n='experience.shopery'></p>
+                                        <div class='chip highlighted-skill white-text'>PHP 7</div>
+                                        <div class='chip highlighted-skill white-text'>Symfony</div>
+                                        <div class='chip highlighted-skill white-text'>MySQL</div>
+                                        <div class='chip highlighted-skill white-text'>Git</div>
+                                        <div class='chip skill'>Docker</div>
+                                        <div class='chip skill'>Doctrine</div>
+                                        <div class='chip skill'>Redis</div>
+                                        <div class='chip skill'>Elasticsearch</div>
+                                        <div class='chip skill'>API REST</div>
+                                        <div class='chip skill'>JWT</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class='center company-logo-col'>
                                         <a href='https://eoniantec.com' target='_blank'>
                                             <div class='company-logo circle z-depth-1'>
-                                                <img src='images/logo_eoniantec.png'/>
+                                                <img src='images/logo_eoniantec.png' alt=""/>
                                             </div>
                                         </a>
                                     </td>
@@ -270,7 +291,7 @@
                                             <span data-i18n='experience.eoniantec-time'></span>
                                         </p>
                                         <p data-i18n='experience.eoniantec'></p>
-                                        <div class='chip highlighted-skill white-text'>PHP</div>
+                                        <div class='chip highlighted-skill white-text'>PHP 7</div>
                                         <div class='chip highlighted-skill white-text'>CodeIgniter</div>
                                         <div class='chip highlighted-skill white-text'>Git</div>
                                         <div class='chip highlighted-skill white-text'>MySQL</div>
@@ -302,7 +323,7 @@
                             <tbody>
                                 <tr>
                                     <td class='center'>
-                                        <img src='images/logo_upc_fib.png' class='logo-upc'/>
+                                        <img src='images/logo_upc_fib.png' class='logo-upc' alt=""/>
                                     </td>
                                     <td>
                                         <p>
@@ -311,11 +332,11 @@
                                         <p>
                                             <i class='tiny material-icons grey-text text-darken-2 align-icon-text'>date_range</i>
                                             <span data-i18n='formation.time'></span>
-                                            <p data-i18n='formation.studies'></p>
-                                            <p>
-                                                <span data-i18n='formation.degree-final-project'></span>
-                                                <a href='http://hdl.handle.net/2099.1/25125' target='_blank' rel='nofollow' data-i18n='formation.degree-final-project-title'></a>
-                                            </p>
+                                        </p>
+                                        <p data-i18n='formation.studies'></p>
+                                        <p>
+                                            <span data-i18n='formation.degree-final-project'></span>
+                                            <a href='http://hdl.handle.net/2099.1/25125' target='_blank' rel='nofollow' data-i18n='formation.degree-final-project-title'></a>
                                         </p>
                                     </td>
                                 </tr>
@@ -329,7 +350,7 @@
         <!-- Footer image -->
         <div class='parallax-container medium'>
             <div class='parallax'>
-                <img src='images/hospitalet_europa.jpg'/>
+                <img src='images/hospitalet_europa.jpg' alt=""/>
             </div>
         </div>
 
@@ -412,9 +433,10 @@
                         cookieMinutes: 60
                     }
                 },
-                function(err, t) {
+                function() {
                     jqueryI18next.init(i18next, $);                    
 
+                    // noinspection JSUnresolvedFunction
                     $('body').localize();
                 }
             );
@@ -442,9 +464,10 @@
                 $('#langOptions a').click(function() {
                     var langCode = $(this).attr('data-langcode');
                     $('#langSelected').html(langCode);
-                    i18next.changeLanguage(langCode, (err, t) => {
+                    i18next.changeLanguage(langCode, (err) => {
                         if (!err) {
                             window.history.replaceState(null, null, "/?lng="+langCode); //Add query string param
+                            // noinspection JSUnresolvedFunction
                             $('body').localize();
                         }
                     });

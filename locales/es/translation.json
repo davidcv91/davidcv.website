@@ -2,24 +2,23 @@
 	"about-me": {
 		"section-title": "Sobre mi",
 		"1": "¡Hola! Me llamo David, tengo ",
-		"2": " años y soy ingeniero informático de la FIB (Facultat d'Informàtica de Barcelona).",
+		"2": " años y estoy graduado en ingeniería informática por la FIB (Facultat d'Informàtica de Barcelona).",
 		"3": "Actualmente soy programador web PHP, aunque también tengo curiosidad por ampliar conocimientos en otros campos como las bases de datos (BigData, Data Mining), IoT-SmartCities o aplicaciones móviles.",
-		"4": "En el ADN de un informático siempre debe estar la formación continua, por eso siempre estoy abierto a descubrir otras áreas, lenguajes de programación, metodologías o nuevas tecnologías.",
+		"4": "En el ADN de un desarrollador siempre debe estar la formación continua, por eso siempre estoy abierto a descubrir otras áreas, lenguajes de programación, metodologías o nuevas tecnologías.",
 		"5": "Soy alegre, risueño, tranquilo y un poco tímido. En mi tiempo de ocio suelo ver mis programas, series y películas favoritas, jugar a videojuegos, y compartir momentos divertidos en compañía de mi família y amigos.",
 		"6": "Si quieres saber más sobre mi, te invito a visitar a mi perfil en LinkedIn, y para más detalles, contacta conmigo por correo electrónico."
 	},
 
 	"skills": {
 		"section-title": "Conocimientos",
-		"php": "Conocimientos avanzados en el desarrollo del backend de aplicaciones web. Experiencia sólida con el uso del framework Codeigniter.",
-		"symfony": "Actualmente aprendiendo conceptos básicos del framework, Doctrine y Twig.",
-		"git": "Conceptos fundamentales y experiencia en gestión de repositorios.",
+		"php": "Conocimientos avanzados en el desarrollo del backend de aplicaciones web. Frameworks: Codeigniter y Symfony.",
+		"symfony": "Uso básico de las funcionalidades y elementos del framework (Doctrine, Twig).",
 		"mysql": "Conocimientos avanzados en creación, diseño y optimización de base de datos y construcción de queries complejas.",
+		"git": "Conceptos fundamentales y experiencia en gestión de repositorios.",
+		"docker": "Uso y configuración de entornos de desarrollo virtuales.",
 		"html": "Conocimiento medio en creación de páginas web y formularios.",
-		"js": "Creación de scripts para páginas o aplicaciones web. Familiarizado con JS nativo y jQuery.",
+		"js": "Creación de scripts para páginas o aplicaciones web. Uso de JS nativo y jQuery.",
 		"css": "Conceptos básicos para el diseño y transformación de contenido de páginas y aplicaciones web. Experiencia con Bootstrap.",
-		"android": "Desarrollo de aplicaciones móviles nativas de complejidad media mediante el SDK (Gestión de notificaciones, base de datos SQLite, creación de API REST).",
-		"vagrant": "Creación de scripts para configuración de entornos de desarrollo virtuales.",
 		"other": "Otros conocimientos"
 	},
 
@@ -33,7 +32,9 @@
 
 	"experience": {
 		"section-title": "Experiencia",
-		"eoniantec-time": "Marzo 2015 - Actualmente",
+		"shopery-time": "Julio 2019 - Actualmente",
+		"shopery": "Colaboración en la creación de un nuevo proyecto marketplace B2B utilizando la metodología Domain-Driven Development (DDD), aplicando principios SOLID, API REST con autenticación via JWT, Symfony 4.3 con MySql, Doctrine, Redis y Elasticsearch. Soporte a soluciones SaaS existentes: Marketplaces B2C y Ecommerces.",
+		"eoniantec-time": "Marzo 2015 - Julio 2019",
 		"eoniantec": "Desarrollo interno de nuevas herramientas y funcionalidades, mantenimiento del software (corrección de errores, optimización, limpieza y refactorización), uso de APIs externas de marketing (Facebook Ads, Google AdWords, etc.) para tareas de gestión automatizada de ads y generación de reports diarios."
 	},
 

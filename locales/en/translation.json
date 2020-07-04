@@ -3,23 +3,22 @@
 		"section-title": "About me",
 		"1": "Hi! My name is David, I'm ",
 		"2": " years old and I'm a software development engineer from the FIB (Facultat d'Informàtica de Barcelona).",
-		"3": "Currently I'm a PHP web developer, althought I'm also curious to know more about other areas like databases (BigData, Data Mining), IoT-SmartCities or mobile applications.",
-		"4": "Continuous formation must be always present in a developer's DNA, that's why I'm ready to discover new areas, programming languages, metodologies or new technologies.",
-		"5": "I'm cheerful, smiling, quiet and a bit shy. On my free time I usually like watching my favourite TV shows, series or movies, playing videogame, and share funny moments with the company of my family and friends.",
+		"3": "Currently I'm a PHP web developer, although I'm also curious to know more about other areas like databases (BigData, Data Mining), IoT-SmartCities or mobile apps.",
+		"4": "Continuous formation must be always present in a developer's DNA, that's why I'm all set to discover new areas, programming languages, methodologies or new technologies.",
+		"5": "I'm cheerful, smiling, quiet and a bit shy. On my spare time I usually like watching my favourite TV shows, series or movies, playing video games, and share enjoyable time with my family and friends company.",
 		"6": "If you want to know more about me, I invite you to take a moment to visit my LinkedIn profile, and for more details, contact me by email."
 	},
 
 	"skills": {
 		"section-title": "Skills",
-		"php": "Advanced skills on backend development of web apps. Solid experience with CodeIgniter framework.",
-		"symfony": "Currently learning initial concepts of the framework, Doctrine and Twig.",
+		"php": "Advanced skills on backend development of web apps. Frameworks: Codeigniter and Symfony.",
+		"symfony": "Basic use of framework features and elements (Doctrine, Twig).",
 		"git": "Essential skills and experience managing repositories.",
-		"mysql": "Advanced concepts on databases creation, design and optimization and building complex queries.",
+		"docker": "Use and setup of virtual development environments.",
+		"mysql": "Advanced concepts on databases creation, design and optimization as well as building complex queries.",
 		"html": "Medium level skills on web and forms building.",
-		"js": "Creation of scripts for web pages and web applications. Familiar with native JS and jQuery.",
+		"js": "Creation of scripts for web pages and web applications. Use of native JS and jQuery.",
 		"css": "Basic concepts on designing and transforming web pages and web applications content. Experience with Bootstrap.",
-		"android": "Development of mobile applications of medium complexity through SDK. (Notifications management, SQlite databases and creation of REST API).",
-		"vagrant": "Scripts building for setting up virtual development environments.",
 		"other": "Other skills"
 	},
 
@@ -33,8 +32,10 @@
 
 	"experience": {
 		"section-title": "Experience",
-		"eoniantec-time": "March 2015 - Present",
-		"eoniantec": "Internal development of new tools and features, software maintenance (bug fixing, optimization, cleaning tasks and refactorization), use of external marketing APIs (Facebook Ads, Google AdWords, etc.) for automated management of ads and generation of daily reports."
+		"shopery-time": "July 2019 - Present",
+		"shopery": "Collaboration to create a new marketplace B2B project using Domain-Driven Development (DDD) methodology, using SOLID principles, API REST using JWT for authentication, Symfony 4.3 with MySql, Doctrine, Redis and Elasticsearch.",
+		"eoniantec-time": "March 2015 - July 2019",
+		"eoniantec": "Internal development of new tools and features, software maintenance (bug fixing, optimization, cleaning tasks and refactoring), use of external marketing APIs (Facebook Ads, Google AdWords, etc.) for automated management of ads and generation of daily reports."
 	},
 
 	"formation": {

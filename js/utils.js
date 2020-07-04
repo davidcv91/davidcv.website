@@ -14,7 +14,7 @@ function calculateAge(date) {
     if (currentMonth < birthMonth) {
         --age;
     }
-    else if (currentMonth == birthMonth) {
+    else if (currentMonth === birthMonth) {
         if (currentDay < birthDay) {
             --age;
         }
