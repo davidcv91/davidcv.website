@@ -84,7 +84,7 @@
                             <a href='https://github.com/davidcv91' class='contact-link circle github-btn' target='_blank' data-i18n='[title]external-link-title.github' title=''>
                                 <i class='zmdi zmdi-github-alt'></i>
                             </a>
-                            <a href='#' class='contact-link circle email-btn email-link' target='_blank' data-i18n='[title]external-link-title.email' title=''>
+                            <a href='mailto:me@davidcv.com' class='contact-link circle email-btn' target='_blank' data-i18n='[title]external-link-title.email' title=''>
                                 <i class='zmdi zmdi-email'></i>
                             </a>
                         </div>
@@ -372,7 +372,7 @@
                         <a href='https://github.com/davidcv91' class='contact-link circle' target='_blank' data-i18n='[title]external-link-title.github' title=''>
                             <i class='zmdi zmdi-github-alt'></i>
                         </a>
-                        <a href='#' class='contact-link circle email-link' target='_blank' data-i18n='[title]external-link-title.email' title=''>
+                        <a href='mailto:me@davidcv.com' class='contact-link circle' target='_blank' data-i18n='[title]external-link-title.email' title=''>
                             <i class='zmdi zmdi-email'></i>
                         </a>
                     </div>
@@ -463,9 +463,6 @@
                 $('.button-collapse').sideNav();
 
                 $('#myAge').html(calculateAge($('#myAge').attr('data-birthdate')));
-
-                //To prevent spam
-                $('.email-link').attr('href', 'mailto:'+'davidcv191'+'@'+'gmail.com');
 
                 $('#langOptions a').click(function() {
                     var langCode = $(this).attr('data-langcode');
